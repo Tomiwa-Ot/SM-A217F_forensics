@@ -1,5 +1,5 @@
-# AT Commands
-On android, enable 3GPP in developer options.
+# SM-A217F AT Commands
+Enable 3GPP in developer options
 ## Requirements
 - pyserial
 
