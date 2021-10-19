@@ -2142,7 +2142,7 @@ AT+ESIM allocation fail
 [USIM_%d] AT+CSIMSTATE=%d--> Not Valid
 ```
 
-- Other Commands
+- Other Common AT Commands
 ```python
 
 CATEGORIES = ('General', 'Call Control', 'Network Service', 'Security', 'Phonebook', 'SMS', 'Supplementary Services', 'Data', 'Fax', 'Fax Class 2', 'V24-V25', 'Specific')
