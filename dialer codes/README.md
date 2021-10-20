@@ -37,4 +37,34 @@ done
       <span><b>*#9900#</b></span>
     </td>
   </tr>
+   <tr>
+    <td align="center" width="20%">
+      <img src="screenshots/hw_module_test.jpg"><br>
+      <span><b>*#0*#</b></span> 
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/service_mode9090.jpg"><br>
+      <span><b>*#9090#</b></span>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="20%">
+      <img src="screenshots/service_mode1111.jpg"><br>
+      <span><b>*#1111#</b></span> 
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/service_mode2222.jpg"><br>
+      <span><b>*#2222#</b></span>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="20%">
+      <img src="screenshots/service_mode0011.jpg"><br>
+      <span><b>*#0011#</b></span> 
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/cp_debug_level.jpg"><br>
+      <span><b>*#66336#</b></span>
+    </td>
+  </tr>
 </table>
