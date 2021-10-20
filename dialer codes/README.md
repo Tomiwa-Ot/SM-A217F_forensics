@@ -6,6 +6,7 @@ for i in ${package_name_trim}; do
   echo "${i}" && pm dump "${i}" | grep -E 'Scheme: "android_secret_code"|Authority: "[0-9].*"|Authority: "[A-Z].*"' >> extracted_codes.txt
 done
 ```
+
 <table>
   <tr>
     <td align="center" width="20%">
