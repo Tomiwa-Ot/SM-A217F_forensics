@@ -1,6 +1,61 @@
 # SM-A217F AT Commands
 Enable 3GPP in developer options
 
+> However, it was discovered that an attacker can still access the modem by switching to secondary USB configuration. In some Samsung devices, when USB debugging is off, the device exposes two USB configurations, with the CDC ACM modem accessible via configuration number 2. Thus, before being able to connect to the modem the attacker has to switch the device to USB configuration number 2 using [usbswitcher](usbswitcher.c).
+```console
+$ lsusb -v
+...
+Bus 001 Device 007: ID 04e8:6860 Samsung Electronics Co., Ltd Galaxy (MTP)
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            0 (Defined at Interface level)
+  bDeviceSubClass         0
+  bDeviceProtocol         0
+  bMaxPacketSize0        64
+  idVendor           0x04e8 Samsung Electronics Co., Ltd
+  idProduct          0x6860 Galaxy (MTP)
+  ...
+  bNumConfigurations      2
+  Configuration Descriptor:
+  ...
+	Interface Descriptor:
+	  bLength                 9
+	  bDescriptorType         4
+	  bInterfaceNumber        0
+	  bAlternateSetting       0
+	  bNumEndpoints           3
+	  bInterfaceClass         6 Imaging
+	  bInterfaceSubClass      1 Still Image Capture
+	  bInterfaceProtocol      1 Picture Transfer Protocol (PIMA 15470)
+	  iInterface              5 MTP
+  ...
+  Configuration Descriptor:
+	bLength                 9
+	bDescriptorType         2
+	wTotalLength          105
+	bNumInterfaces          3
+	bConfigurationValue     2
+	iConfiguration          0
+	bmAttributes         0xc0
+	  Self Powered
+	MaxPower               96mA
+	...
+	Interface Descriptor:
+	  bLength                 9
+	  bDescriptorType         4
+	  bInterfaceNumber        1
+	  bAlternateSetting       0
+	  bNumEndpoints           1
+	  bInterfaceClass         2 Communications
+	  bInterfaceSubClass      2 Abstract (modem)
+	  bInterfaceProtocol      1 AT-commands (v.25ter)
+	  iInterface              6 CDC Abstract Control Model (ACM)
+	...
+
+```
+
 ## Requirements
 - pyserial
 
