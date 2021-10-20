@@ -1,7 +1,7 @@
 # SM-A217F AT Commands
 Enable 3GPP in developer options
 
-> However, it was discovered that an attacker can still access the modem by switching to secondary USB configuration. In some Samsung devices, when USB debugging is off, the device exposes two USB configurations, with the CDC ACM modem accessible via configuration number 2. Thus, before being able to connect to the modem the attacker has to switch the device to USB configuration number 2 using [usbswitcher](usbswitcher.c).
+> However, it was discovered that an attacker can still access the modem by switching to secondary USB configuration even when both USB tethering and USB debugging (i.e., ADB) are disabled and when the device is locked. In some Samsung devices, when USB debugging is off, the device exposes two USB configurations, with the CDC ACM modem accessible via configuration number 2. Thus, before being able to connect to the modem the attacker has to switch the device to USB configuration number 2 using [usbswitcher](usbswitcher.c).
 ```console
 $ lsusb -v
 ...
