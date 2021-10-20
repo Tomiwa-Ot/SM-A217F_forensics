@@ -67,4 +67,25 @@ done
       <span><b>*#66336#</b></span>
     </td>
   </tr>
+  <tr>
+    <td align="center" width="20%">
+      <img width="50%" src="screenshots/device_keystring1.jpg"><img width="50%" src="screenshots/device_keystring2.jpg"><br>
+      <span><b>*#2663#</b></span> 
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/samplemanagement.jpg"><br>
+      <span><b>*#7676#</b></span>
+    </td>
+  </tr>
+  </tr>
+    <tr>
+    <td align="center" width="20%">
+      <img src="screenshots/imei_sn.jpg"><br>
+      <span><b>*#06#</b></span> 
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/device_keystring3.jpg"><br>
+      <span><b>*#7785#</b></span>
+    </td>
+  </tr>
 </table>
