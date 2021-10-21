@@ -1,5 +1,6 @@
 /*
- * usbswitcher.c, by @joystick and @rpaleari
+ * usbswitcher.c, by https://github.com/joystick2020 and 
+ * https://github.com/rpaleari
  *
  * Search for an attached USB Samsung device and switch it to a specific USB
  * configuration (#2). Requires libusb [1] (use version 0.1).
