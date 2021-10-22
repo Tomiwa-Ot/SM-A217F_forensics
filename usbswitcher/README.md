@@ -8,7 +8,7 @@ libusb
 
 ### Setup
 ```console
-user@vm:~$ pip install requirements.txt
+user@vm:~$ pip3 install requirements.txt
 user@vm:~$ python3 usbswitcher.py -h
 usage: usbswitcher [-h] [--idVendor IDVENDOR] [--idProduct IDPRODUCT]
 
