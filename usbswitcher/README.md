@@ -23,6 +23,6 @@ optional arguments:
                         Product ID of the device <class 'int'>
 ```
 
-### 
+### Exceptions
 - No Backend Available: https://github.com/pyusb/pyusb/blob/master/docs/faq.rst#how-do-i-fix-no-backend-available-errors
 - Resource Busy: ¯\\\_(ツ)_/¯
