@@ -3,8 +3,8 @@ Expose modem interface via USB
 
 ### Dependency
 libusb
-- Linux: install libusb via your package manager
-- Windows: https://github.com/pyusb/pyusb/blob/master/docs/faq.rst#how-do-i-install-libusb-on-windows
+- <b>Linux</b>: Install libusb via your package manager
+- <b>Windows</b>: https://github.com/pyusb/pyusb/blob/master/docs/faq.rst#how-do-i-install-libusb-on-windows
 
 ### Setup
 ```console
