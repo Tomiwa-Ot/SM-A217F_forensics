@@ -1,7 +1,7 @@
 # SM-A217F AT Commands
 Enable 3GPP in developer options
 
-> However, it was discovered that an attacker can still access the modem by switching to a secondary USB configuration even when both USB tethering and USB debugging (i.e., ADB) are disabled and when the device is locked. Samsung devices expose MTP and other USB configurations (regardless of whether USB debugging is enabled or disabled), one of which is the CDC ACM modem for AT commands. Thus, the attacker has to switch the device USB configuration to the CDC ACM modem using [usbswitcher](usbswitcher/).
+> However, it was discovered that an attacker can still access the modem by switching to a secondary USB configuration even when both USB tethering and USB debugging (i.e. ADB) are disabled and when the device is locked. Samsung devices exposes MTP as USB configuration 1 and CDC ACM modem (for AT commands) as USB Configuration 2 (regardless of whether USB debugging is enabled or disabled). Thus, the attacker has to switch the device USB configuration to the CDC ACM modem (i.e. USB configuration 2) using [usbswitcher](usbswitcher/).
 ```console
 user@vm:~$ lsusb -v
 ...
@@ -206,7 +206,7 @@ Device Status:     0x0000
   (Bus Powered)
 ```
 
-> As a result of previous work (CVE-2016-4030, CVE2016-4031, and CVE-2016-4032), Samsung has locked down the exposed AT interface with a command whitelist.
+> As a result of previous work (CVE-2016-4030, CVE-2016-4031, and CVE-2016-4032), Samsung has locked down the exposed AT interface with a command whitelist.
 > This whitelist is active when the ro.product_ship property is set to true and limits the commands to information gathering only. Any non-whitelisted command responds with the generic reply of OK, even if it is invalid.
 
 Certain AT commands may not work. Changing the ro.product_ship property in ```/system/build.prop``` to False may deactivate the whitelist. To do this, the device should either be rooted or have a custom ROM installed.
