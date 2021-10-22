@@ -211,7 +211,7 @@ Device Status:     0x0000
 > As a result of previous work (CVE-2016-4030, CVE2016-4031, and CVE-2016-4032), Samsung has locked down the exposed AT interface with a command whitelist.
 > This whitelist is active when the ro.product_ship property is set to true and limits the commands to information gathering only. Any non-whitelisted command responds with the generic reply of OK, even if it is invalid.
 
-Certain AT commands may not work. Changing the ro.product_ship property to False may deactivate the whitelist. To do this, the device should either be rooted or have a custom ROM installed.
+Certain AT commands may not work. Changing the ro.product_ship property in ```/system/build.prop``` to False may deactivate the whitelist. To do this, the device should either be rooted or have a custom ROM installed.
 
 ## Requirements
 - pyserial
