@@ -2,6 +2,8 @@
 Enable 3GPP in developer options
 
 > However, it was discovered that an attacker can still access the modem by switching to a secondary USB configuration even when both USB tethering and USB debugging (i.e. ADB) are disabled and when the device is locked. Samsung devices exposes MTP as USB configuration 1 and CDC ACM modem (for AT commands) as USB Configuration 2 (regardless of whether USB debugging is enabled or disabled). Thus, the attacker has to switch the device USB configuration to the CDC ACM modem (i.e. USB configuration 2) using [usbswitcher](usbswitcher/).
+
+USB Descriptors: https://beyondlogic.org/usbnutshell/usb5.shtml
 ```console
 user@vm:~$ lsusb -v
 ...
