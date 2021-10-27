@@ -233,5 +233,6 @@ user@pc:~$ python -m serial.tools.miniterm <port_name>
 
 - [CP (Core Processor/Modem) AT Commands](at%20commands/CP.md)
 
-[Other Common AT Commands](at%20commands/others.md)
-[AT+CLAC](at%20commands/AT+CLAC.md)
+### NB
+- Other common [AT Commands](at%20commands/others.md)
+- List supported commands: [AT+CLAC](at%20commands/AT+CLAC.md)
