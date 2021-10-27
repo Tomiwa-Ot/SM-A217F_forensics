@@ -1,4 +1,5 @@
 AT+CLAC = List all supported AT commands
+```console
 AT&D
 AT&F
 AT&G
@@ -180,3 +181,4 @@ AT+VZWAPNE
 AT+VZWMRUC
 AT+VZWMRUE
 AT3
+```
