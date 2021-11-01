@@ -80,6 +80,8 @@ def main():
 		sys.stderr.write("{}\n".format(str(error)))
 	except usb.core.USBError as error:
 		sys.stderr.write("{}\n".format(str(error)))
+	except NotImplementedError as error:
+		sys.stderr.write("{}\n".format(str(error)))
 
 
 if __name__ == "__main__":
