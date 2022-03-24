@@ -15,12 +15,13 @@ import argparse
 import sys
 import usb.core
 
-VENDOR_ID = 0x04e8	# Samsung Vendor ID
-PRODUCT_ID = 0x6860	# Samsung Product ID
+vendor_id = 0x04e8	# Samsung Vendor ID
+product_id = 0x6860	# Samsung Product ID
 CONFIGURATION_VALUES = []
 
 
 def parse_args():
+	global vendor_id, product_id
 	parser = argparse.ArgumentParser(
 		prog="usbswitcher",
 		description="Description: switches USB configuration\n" \
@@ -38,15 +39,15 @@ def parse_args():
 	)
 	args = parser.parse_args()
 	if args.idVendor is not None:
-		VENDOR_ID = args.idVendor
+		vendor_id = args.idVendor
 	if args.idProduct is not None:
-		PRODUCT_ID = args.idProduct
+		product_id = args.idProduct
 
 
 def main():
 	parse_args()
 	try:
-		dev = usb.core.find(idVendor=VENDOR_ID, idProduct=PRODUCT_ID)
+		dev = usb.core.find(idVendor=vendor_id, idProduct=product_id)
 		if dev is None:
 			sys.stderr.write("[+] Device Not Found\n")
 			sys.exit(1)
